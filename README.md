@@ -75,9 +75,9 @@ df.nunique()
 <img width="494" height="541" alt="image" src="https://github.com/user-attachments/assets/222a4123-ced9-4aae-b4e0-00b362714d05" />
 
 ```python
-sns.countplot(data=df,x="Survived")
+sns.countplot(data=df,x="Age")
 ```
-<img width="819" height="586" alt="image" src="https://github.com/user-attachments/assets/7e688f0f-4618-4f17-a68b-d183151079c0" />
+<img width="858" height="584" alt="image" src="https://github.com/user-attachments/assets/92a92eb2-f9fa-4107-b2d5-a8cc82e64c95" />
 
 ```python
 df.Pclass.unique()
