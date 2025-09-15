@@ -91,18 +91,18 @@ df.rename(columns={'Sex':'Gender'},inplace=True)
 df
 ```
 
-<img width="1401" height="627" alt="image" src="https://github.com/user-attachments/assets/d641fcbd-5307-4ace-b637-fdb43865ee1a" />
+<img width="1391" height="648" alt="image" src="https://github.com/user-attachments/assets/9edd209d-eca2-4b00-baf3-d3d327183ddb" />
 
 ```python
 sns.catplot(x="Gender",col="Survived",kind="count",data=df,height=5,aspect=.7)
 ```
 
-<img width="1282" height="664" alt="image" src="https://github.com/user-attachments/assets/211f4ced-8973-4bdc-b1f9-67409700a077" />
+<img width="987" height="654" alt="image" src="https://github.com/user-attachments/assets/ffe1c5bc-7ef9-40e1-981f-e034ad7aa9aa" />
 
 ```python
 df.boxplot(column="Age",by="Survived")
 ```
-<img width="1062" height="629" alt="image" src="https://github.com/user-attachments/assets/2674ebf1-3653-4f41-a46d-ab189f7d9176" />
+<img width="789" height="623" alt="image" src="https://github.com/user-attachments/assets/7a0bface-7e03-4c4a-8a00-7fb8ee1c9828" />
 
 ```python
 sns.scatterplot(x=df["Age"],y=df["Fare"])
