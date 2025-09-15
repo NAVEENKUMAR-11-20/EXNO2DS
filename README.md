@@ -104,10 +104,14 @@ sns.scatterplot(x=df["Age"],y=df["Fare"])
 
 ```python
 import matplotlib.pyplot as plt
-fig, ax1 = plt.subplots(figsize=(10,5))
-p = sns.boxplot(ax=ax1,x='Pclass',y='Age',hue='Gender',data=df)
+plt = sns.boxplot(ax=ax1,x='Pclass',y='Age',hue='Gender',data=df)
 ```
-<img width="1143" height="599" alt="image" src="https://github.com/user-attachments/assets/3039b082-778f-4e41-a0bf-bfdd2b37840b" />
+<img width="802" height="596" alt="image" src="https://github.com/user-attachments/assets/db83ec61-0906-448c-beba-54eb6f1f7016" />
+
+```python
+sns.catplot(x='Pclass',y='Age',hue='Gender',col='Survived',kind="box",data=df)
+```
+<img width="1401" height="644" alt="image" src="https://github.com/user-attachments/assets/bae866e2-3efa-47ba-90a9-c3ade0f9bdeb" />
 
 ```python
 sns.catplot(data=df,col="Survived",x="Gender",hue="Pclass",kind="count")
@@ -115,10 +119,10 @@ sns.catplot(data=df,col="Survived",x="Gender",hue="Pclass",kind="count")
 <img width="1421" height="694" alt="image" src="https://github.com/user-attachments/assets/c872c712-7d0d-40a2-9042-8a0c85c3d9b8" />
 
 ```python
-corr = df.select_dtypes(include=np.number).corr()
+corr = df.corr(numeric_only)
 sns.heatmap(corr, annot=True)
 ```
-<img width="887" height="588" alt="image" src="https://github.com/user-attachments/assets/dc56a5ca-9e53-412a-9f64-6712fe01895c" />
+<img width="749" height="568" alt="image" src="https://github.com/user-attachments/assets/4c60fea4-2310-417a-b92c-295029ec2f16" />
 
 # RESULT
 Hence performing Exploratory Data Analysis on the given data set is successfully executed.
