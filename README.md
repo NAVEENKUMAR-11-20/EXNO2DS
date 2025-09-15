@@ -80,12 +80,6 @@ sns.countplot(data=df,x="Age")
 <img width="858" height="584" alt="image" src="https://github.com/user-attachments/assets/92a92eb2-f9fa-4107-b2d5-a8cc82e64c95" />
 
 ```python
-df.Pclass.unique()
-```
-
-<img width="254" height="47" alt="image" src="https://github.com/user-attachments/assets/02143fa3-57f6-4e5d-9995-a94f8ec36958" />
-
-```python
 df.rename(columns={'Sex':'Gender'},inplace=True)
 df
 ```
