@@ -62,29 +62,29 @@ df["Age"].value_counts()
 ```python
 df.shape
 ```
-<img width="899" height="54" alt="image" src="https://github.com/user-attachments/assets/6373fd9e-999b-4744-a38f-115a4c5a77f7" />
+<img width="326" height="50" alt="image" src="https://github.com/user-attachments/assets/371b4427-20ca-4e89-bc0f-c0bccd5a25de" />
 
 ```python
 df.set_index("PassengerId",inplace=True)
 df.describe()
 ```
-<img width="1248" height="373" alt="image" src="https://github.com/user-attachments/assets/e3854b06-fdc2-476f-865f-0336e6ae68bd" />
+<img width="947" height="383" alt="image" src="https://github.com/user-attachments/assets/4dba225c-d7de-494f-adbb-ea417f22476b" />
 
 ```python
 df.nunique()
 ```
-<img width="778" height="523" alt="image" src="https://github.com/user-attachments/assets/2da8a330-e555-4c0d-8612-01df9f54c3b1" />
+<img width="494" height="541" alt="image" src="https://github.com/user-attachments/assets/222a4123-ced9-4aae-b4e0-00b362714d05" />
 
 ```python
 sns.countplot(data=df,x="Survived")
 ```
-<img width="1099" height="568" alt="image" src="https://github.com/user-attachments/assets/64d7294b-2b5f-4d7d-8ec2-05a2a8fa3a8b" />
+<img width="819" height="586" alt="image" src="https://github.com/user-attachments/assets/7e688f0f-4618-4f17-a68b-d183151079c0" />
 
 ```python
 df.Pclass.unique()
 ```
 
-<img width="742" height="59" alt="image" src="https://github.com/user-attachments/assets/233c237c-2ff2-4fc0-9675-323165f8f213" />
+<img width="254" height="47" alt="image" src="https://github.com/user-attachments/assets/02143fa3-57f6-4e5d-9995-a94f8ec36958" />
 
 ```python
 df.rename(columns={'Sex':'Gender'},inplace=True)
