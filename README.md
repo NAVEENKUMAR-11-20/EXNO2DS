@@ -31,7 +31,6 @@ REG NO: 212224240102
 ```python
 import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
 import seaborn as sns
 df=pd.read_csv('/content/titanic_dataset.csv')
 df.head()
@@ -107,24 +106,25 @@ df.boxplot(column="Age",by="Survived")
 ```python
 sns.scatterplot(x=df["Age"],y=df["Fare"])
 ```
-<img width="1081" height="573" alt="image" src="https://github.com/user-attachments/assets/8bb7875e-bc61-4c38-8c6c-ba89fe4c89c7" />
+<img width="915" height="587" alt="image" src="https://github.com/user-attachments/assets/69ce96bb-c570-421f-911a-a4c9ca260908" />
 
 ```python
+import matplotlib.pyplot as plt
 fig, ax1 = plt.subplots(figsize=(10,5))
 p = sns.boxplot(ax=ax1,x='Pclass',y='Age',hue='Gender',data=df)
 ```
-<img width="1396" height="571" alt="image" src="https://github.com/user-attachments/assets/916f510f-66c7-4f25-b5df-823cf13ff666" />
+<img width="1143" height="599" alt="image" src="https://github.com/user-attachments/assets/3039b082-778f-4e41-a0bf-bfdd2b37840b" />
 
 ```python
 sns.catplot(data=df,col="Survived",x="Gender",hue="Pclass",kind="count")
 ```
-<img width="1407" height="647" alt="image" src="https://github.com/user-attachments/assets/3fea679a-3295-43dd-9f2f-32da2fcc9d70" />
+<img width="1421" height="694" alt="image" src="https://github.com/user-attachments/assets/c872c712-7d0d-40a2-9042-8a0c85c3d9b8" />
 
 ```python
 corr = df.select_dtypes(include=np.number).corr()
 sns.heatmap(corr, annot=True)
 ```
-<img width="992" height="569" alt="image" src="https://github.com/user-attachments/assets/3657e958-0709-45a4-9f71-7b86fcb422f9" />
+<img width="887" height="588" alt="image" src="https://github.com/user-attachments/assets/dc56a5ca-9e53-412a-9f64-6712fe01895c" />
 
 # RESULT
 Hence performing Exploratory Data Analysis on the given data set is successfully executed.
