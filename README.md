@@ -41,22 +41,23 @@ df.head()
 ```python
 df.info()
 ```
-<img width="832" height="428" alt="image" src="https://github.com/user-attachments/assets/e2fea6c5-a09a-4163-93d9-e22312cd2c4d" />
+<img width="765" height="444" alt="image" src="https://github.com/user-attachments/assets/bd2e16c4-9364-439e-be3f-e246726bef68" />
 
 ```python
 df.dtypes
 ```
-<img width="866" height="578" alt="image" src="https://github.com/user-attachments/assets/d3632bff-612d-4e43-ae46-76c7a41ac6dd" />
+<img width="1287" height="578" alt="image" src="https://github.com/user-attachments/assets/824a2d93-4033-4950-b27b-a5deea46352f" />
 
 ```python
 df.describe()
 ```
-<img width="1218" height="379" alt="image" src="https://github.com/user-attachments/assets/0a6f4dda-bed7-4ee7-a105-6439753c8fd7" />
+<img width="1350" height="385" alt="image" src="https://github.com/user-attachments/assets/4c6e65b8-39af-4463-8955-29a0f1d693d8" />
+
 
 ```python
 df["Age"].value_counts()
 ```
-<img width="1008" height="611" alt="image" src="https://github.com/user-attachments/assets/032c288f-c9cc-404f-a427-01878a628088" />
+<img width="654" height="616" alt="image" src="https://github.com/user-attachments/assets/a67b1868-7920-4d35-ab15-8a52a486efb6" />
 
 ```python
 df.shape
