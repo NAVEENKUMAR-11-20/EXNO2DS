@@ -36,7 +36,7 @@ import seaborn as sns
 df=pd.read_csv('/content/titanic_dataset.csv')
 df.head()
 ```
-<img width="1387" height="329" alt="image" src="https://github.com/user-attachments/assets/8e05c810-f152-4eb2-ab20-b47fb0cad33f" />
+<img width="1416" height="337" alt="image" src="https://github.com/user-attachments/assets/3b2e222e-ed5d-4ea7-a296-56758f301f7e" />
 
 ```python
 df.info()
